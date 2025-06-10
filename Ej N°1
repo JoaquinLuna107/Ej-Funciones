@@ -1,0 +1,12 @@
+public class Main {
+
+    public static void mostrarsaludo() {
+        System.out.println("Hola Mundo");
+    }
+
+    public static void main(String[] args) {
+
+        mostrarsaludo();
+
+    }
+}
