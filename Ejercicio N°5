@@ -1,0 +1,20 @@
+public class Main {
+
+    public static  void MenuOpciones()
+    {
+        System.out.println("========MENU COMIDA========");
+        System.out.println("1)-Milanesa");
+        System.out.println("2)-Hamburguesa");
+        System.out.println("3)-Ensalada \n");
+
+        System.out.println("========POSTRES========");
+        System.out.println("1)-Helado");
+        System.out.println("2)-Torta");
+        System.out.println("3)-Flan");
+
+    }
+
+    public static void main(String[] args) {
+        MenuOpciones();
+    }
+}
