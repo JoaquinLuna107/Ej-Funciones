@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+    
+    public static String convertirAMayusculas(String texto) {
+        return texto.toUpperCase();
+    }
+
+    public static void main(String[] args) {
+        Scanner leer = new Scanner(System.in);
+
+        System.out.print("Ingresa un texto: ");
+        String entrada = leer.nextLine();
+
+        String resultado = convertirAMayusculas(entrada);
+
+        System.out.println("Texto en mayúsculas: " + resultado);
+
+        leer.close();
+    }
+}
