@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+
+public class Main {
+  
+   public static void imprimirArray(int[] arreglo) {
+       System.out.print("[");
+       for (int i = 0; i < arreglo.length; i++) {
+           System.out.print(arreglo[i]);
+           if (i < arreglo.length - 1) {
+               System.out.print(", ");
+           }
+       }
+       System.out.println("]");
+   }
+
+
+   public static void main(String[] args) {
+       Scanner leer = new Scanner(System.in);
+
+
+       System.out.print("¿Cuántos números vas a ingresar? ");
+       int cantidad = leer.nextInt();
+
+
+       int[] numeros = new int[cantidad];
+
+
+       for (int i = 0; i < cantidad; i++) {
+           System.out.print("Ingresá el número " + (i + 1) + ": ");
+           numeros[i] = leer.nextInt();
+       }
+
+
+       System.out.print("Array ingresado: ");
+       imprimirArray(numeros);
+
+
+       leer.close();
+   }
+}
