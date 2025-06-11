@@ -1,0 +1,24 @@
+public class Main
+{
+    public static int Buscar (String[] palabras)
+    {
+        String Palabra_clave = "tigre";
+        int veces = 0;
+        for (int i =0 ; i <palabras.length;i++ )
+        {
+            if (Palabra_clave == palabras[i])
+            {
+                veces++;
+            }
+
+
+        }
+        return  veces;
+    }
+    public static void  main (String[] args)
+    {
+        String [] palabras = {"tigre","perro","paloma","tigre","elefante", "caballo"};
+        int veces = Buscar(palabras);
+        System.out.println("La palabra tigre se repite : "+ veces +" veces");
+    }
+}
