@@ -1,0 +1,26 @@
+public class Main {
+
+
+   public static boolean Buscarnumero(int[] arreglo, int valorBuscado) {
+       for (int numero : arreglo) {
+           if (numero == valorBuscado) {
+               return true;
+           }
+       }
+       return false;
+   }
+
+
+   public static void main(String[] args) {
+       int[] numeros = {4, 7, 10, 22, 35, 77, 23};
+
+
+       boolean resultado1 = Buscarnumero(numeros, 7);
+       boolean resultado2 = Buscarnumero(numeros, 5); 
+
+
+       System.out.println();
+       System.out.println("¿Está el 7?: " + resultado1);
+       System.out.println("¿Está el 5?: " + resultado2);
+   }
+}
