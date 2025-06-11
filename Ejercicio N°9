@@ -1,0 +1,30 @@
+public class Main {
+
+
+   public static  int SumarNumeros(int...numeros)
+   {
+       int suma = 0;
+        for (int numero : numeros){
+            suma = suma + numero;
+
+
+        }
+     return suma;
+   }
+//Numeros ya ingresados, el usuario no los ingresa por consola.
+
+
+   public static void main(String[] args){
+       int ResultadoN1 = SumarNumeros(3,4);
+       int ResultadoN2 = SumarNumeros(15,6,5,7,9);
+       int ResultadoN3 = SumarNumeros(76,32,2,3);
+
+
+       //Mostrar los 3 resultados
+
+
+       System.out.println("Resultado primera suma es de : "+ ResultadoN1);
+       System.out.println("Resultado segunda suma es de : "+ResultadoN2);
+       System.out.println("Resultado Tercera suma es de : "+ResultadoN3);
+       }
+}
